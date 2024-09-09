@@ -18,7 +18,7 @@ public class HomeController{
     }
     @GetMapping(path= "/oi")
     public String getMethodName1() {
-        return "hello world 2";
+        return "testando path oi";
 }
     @GetMapping(path= "/test")
     public String getMethodName2(@RequestParam String id) {
