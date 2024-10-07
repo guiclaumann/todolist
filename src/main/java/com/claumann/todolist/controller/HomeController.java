@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/meucontroller")
 public class HomeController {
 
-    @GetMapping
-    public String getMethodName() {
-        return "hello world";
-    }
+	@GetMapping
+	public String getMethodName() {
+		return "hello world";
+	}
 
-    @GetMapping(path = "/oi")
-    public String getMethodName1() {
-        return "testando path oi";
-    }
+	@GetMapping(path = "/oi")
+	public String getMethodName1() {
+		return "testando path oi";
+	}
 
-    @GetMapping(path = "/test")
-    public String getMethodName2(@RequestParam String id) {
-        return "hello world 3, tudo bem: " + id;
-    }
+	@GetMapping(path = "/test")
+	public String getMethodName2(@RequestParam String id) {
+		return "hello world 3, tudo bem: " + id;
+	}
 }
